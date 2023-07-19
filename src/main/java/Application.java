@@ -1,12 +1,24 @@
 import java.sql.*;
 import java.util.List;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 
 public class Application {
+
     public static void main(String[] args) throws SQLException {
+
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myPersistenceUnit");
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        entityManager.getTransaction().begin();
+
+        entityManager.close();
+        entityManagerFactory.close();
+
+
         final String user = "postgres";
         final String pass = "root";
         final String url = "jdbc:postgresql://localhost:5432/skypro";
@@ -25,16 +37,17 @@ public class Application {
                 System.out.println(gender);
                 System.out.println(city);
             }
+        }
 
-            EmployeeDao employeeDao = new EmployeeDaoImpl();
-            List <Employee> employees  = employeeDao.getAllEmployee();
+            EmployeeDAO employeeDAO = (EmployeeDAO) new UserDaoImpl();
+            List <Employee> employees  = employeeDAO.getAllEmployee();
 
             for (Employee employee : employees) {
                 System.out.println("Id: " + employee.getId());
-                System.out.println("Name: " + employee.getFirst_name());
-                System.out.println("Surname: " + employee.getLast_name());
+                System.out.println("Name: " + employee.getFirstName());
+                System.out.println("Surname: " + employee.getLastName());
                 System.out.println("Gender: " + employee.getGender());
-                System.out.println("City id: " + employee.getCity_id());
+                System.out.println("City id: " + employee.getCityId());
                 System.out.println("Age: " + employee.getAge());
                 System.out.println("----------------------------------");
             }
@@ -43,7 +56,7 @@ public class Application {
 //            employeeDao.deleteEmployee(7);
 //            employeeDao.updateEmployee(4, john);
 
-            System.out.println(employeeDao.getById(3).getFirst_name());
+            System.out.println(employeeDAO.getById(3).getFirstName());
         }
     }
-}
+

@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="JDBC (повторение) 15.07.23">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="JDBC_repeat" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Professional/IdeaProjects/6 course. Доп. модуль/JDBCrepeat",
+    "last_opened_file_path": "C:/Users/Professional/IdeaProjects/6 course. Доп. модуль/HibernateIntroductionEntityRepetition",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -71,8 +65,29 @@
       <option name="presentableId" value="Default" />
       <updated>1688402457930</updated>
       <workItem from="1688402460384" duration="1068000" />
-      <workItem from="1688403616501" duration="2076000" />
+      <workItem from="1688403616501" duration="5269000" />
+      <workItem from="1688490786495" duration="97000" />
+      <workItem from="1688494435832" duration="637000" />
+      <workItem from="1688586252241" duration="82000" />
+      <workItem from="1689449477903" duration="378000" />
+      <workItem from="1689451760879" duration="1362000" />
+      <workItem from="1689791787388" duration="4155000" />
     </task>
+    <task id="LOCAL-00001" summary="JDBC (повторение)">
+      <created>1688405790441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688405790441</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JDBC (повторение) 15.07.23">
+      <created>1689452257275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689452257275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +103,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JDBC (повторение)" />
+    <MESSAGE value="JDBC (повторение) 15.07.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC (повторение) 15.07.23" />
   </component>
 </project>
