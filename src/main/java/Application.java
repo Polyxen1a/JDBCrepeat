@@ -1,62 +1,32 @@
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 
 public class Application {
 
-    public static void main(String[] args) throws SQLException {
-
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myPersistenceUnit");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-        entityManager.getTransaction().begin();
-
-        entityManager.close();
-        entityManagerFactory.close();
-
+    public static void main(String[] args, Employee newEmployee) throws SQLException {
 
         final String user = "postgres";
-        final String pass = "root";
+        final String password = "root8351";
         final String url = "jdbc:postgresql://localhost:5432/skypro";
-        try (final Connection connection = DriverManager.getConnection(url, user, pass);
-             PreparedStatement statement = connection.prepareStatement("" +
-                     "SELECT  * FROM employee WHERE id = (?)")) {
-            statement.setInt(1, 2);
-            final ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                String name = "Name: " + resultSet.getString("first_name");
-                String surname = "Surname: " + resultSet.getString("last_name");
-                String gender = "Gender: " + resultSet.getString(4);
-                String city = "City id: " + resultSet.getInt(6);
-                System.out.println(name);
-                System.out.println(surname);
-                System.out.println(gender);
-                System.out.println(city);
-            }
-        }
+        List<Employee> employeeList = new ArrayList<>();
 
-            EmployeeDAO employeeDAO = (EmployeeDAO) new UserDaoImpl();
-            List <Employee> employees  = employeeDAO.getAllEmployee();
-
-            for (Employee employee : employees) {
-                System.out.println("Id: " + employee.getId());
-                System.out.println("Name: " + employee.getFirstName());
-                System.out.println("Surname: " + employee.getLastName());
-                System.out.println("Gender: " + employee.getGender());
-                System.out.println("City id: " + employee.getCityId());
-                System.out.println("Age: " + employee.getAge());
-                System.out.println("----------------------------------");
-            }
-            Employee john = new Employee(7,"john", "Washington", "male", 44,1);
-//            employeeDao.createEmployee(john);
-//            employeeDao.deleteEmployee(7);
-//            employeeDao.updateEmployee(4, john);
-
-            System.out.println(employeeDAO.getById(3).getFirstName());
+        try (Connection connection = DriverManager.getConnection(url, user, password)) {
+            CityDAO cityDAO = new CityDAOImpl(connection);
+            City newCity = new City("Саратов");
+            employeeList.add(new Employee("Артем", "Матросов", "м", 42, 23));
+            employeeList.add(new Employee("Marina", "Федоровна", "ж", 47, 43));
+            employeeList.add(new Employee("Марина", "Губкина", "ж", 23, 23));
+            employeeList.add(new Employee("Сергей", "Давыдов", "м", 35, 47));
+            EmployeeDAO employeeDAO = new EmployeeDAOImpl(connection);
+            for (Employee e : employeeList)
+                employeeDAO.insertEmployeeIntoTable(e);
+            employeeDAO.selectEmployeeById(4);
+            employeeDAO.getAllEmployees();
+            EmployeeDAO.updateEmployee(new Employee("Артем", "Матросов", "м", 27, 23));
+            employeeDAO.dropEmployee(employeeList.get(2));
+            cityDAO.dropCity(newCity);
         }
     }
-
+}

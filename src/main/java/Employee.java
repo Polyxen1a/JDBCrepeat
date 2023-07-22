@@ -25,6 +25,9 @@ public class Employee {
         this.city = cityId;
     }
 
+    public Employee(String artem, String matrosov, String male, int i, int age) {
+    }
+
     public int getId() {
         return id;
     }
