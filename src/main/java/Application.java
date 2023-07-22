@@ -24,7 +24,7 @@ public class Application {
                 employeeDAO.insertEmployeeIntoTable(e);
             employeeDAO.selectEmployeeById(4);
             employeeDAO.getAllEmployees();
-            EmployeeDAO.updateEmployee(new Employee("Артем", "Матросов", "м", 27, 23));
+            employeeDAO.updateEmployee(new Employee("Артем", "Матросов", "м", 27, 23));
             employeeDAO.dropEmployee(employeeList.get(2));
             cityDAO.dropCity(newCity);
         }
