@@ -1,20 +1,48 @@
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "employee")
 
 public class Employee {
 
-    private int id;
-    private String firstName;
-    private String lastName;
-    private String gender;
-    private int age;
-    private int cityId;
-
     @JoinColumn(name = "city_id")
     @ManyToOne
+
     private City city;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+
+    private int id;
+
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
+
+    @Column(name = "gender")
+    private String gender;
+
+    @Column(name = "age")
+    private int age;
+
+    @Column(name = "city_id")
+    private int cityId;
+
+    public Employee() {
+
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id && age == employee.age && cityId == employee.cityId && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(gender, employee.gender);
+    }
 
     public Employee(int id, String firstName, String lastName, String gender, int age, City cityId) {
         this.id = id;
@@ -25,7 +53,23 @@ public class Employee {
         this.city = cityId;
     }
 
-    public Employee(String artem, String matrosov, String male, int i, int age) {
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", first_name='" + firstName + '\'' +
+                ", last_name='" + lastName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", city_id=" + cityId +
+                '}';
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, gender, age, cityId);
+    }
+
+    public Employee(String firstName, String lastName, String gender, int cityId, int age) {
     }
 
     public int getId() {
@@ -40,7 +84,7 @@ public class Employee {
         return firstName;
     }
 
-    public void setFirst_name(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -75,6 +119,5 @@ public class Employee {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
-
 }
 
