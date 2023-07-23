@@ -32,10 +32,6 @@ public class Employee {
     @Column(name = "city_id")
     private int cityId;
 
-    public Employee() {
-
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,6 +66,14 @@ public class Employee {
     }
 
     public Employee(String firstName, String lastName, String gender, int cityId, int age) {
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 
     public int getId() {
