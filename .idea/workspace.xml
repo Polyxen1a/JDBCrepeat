@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="Hibernate: введение, Entity (повторение) 22.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 22.07.23">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,11 @@
       <workItem from="1689799306016" duration="2283000" />
       <workItem from="1689803179928" duration="139000" />
       <workItem from="1690030555071" duration="3971000" />
-      <workItem from="1690050136712" duration="1230000" />
+      <workItem from="1690050136712" duration="1684000" />
+      <workItem from="1690130736177" duration="1238000" />
+      <workItem from="1690132066390" duration="174000" />
+      <workItem from="1690132546578" duration="248000" />
+      <workItem from="1690193630566" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC (повторение)">
       <created>1688405790441</created>
@@ -103,7 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690034206995</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hibernate: введение, Entity (повторение) 22.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 22.07.23">
+      <created>1690051660447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690051660447</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23">
+      <created>1690131964192</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690131964192</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23">
+      <created>1690132217146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690132217146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +148,7 @@
     <MESSAGE value="JDBC (повторение) 15.07.23" />
     <MESSAGE value="Hibernate: введение, Entity (повторение) 19.07.23" />
     <MESSAGE value="Hibernate: введение, Entity (повторение) 22.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 22.07.23" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate: введение, Entity (повторение) 22.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 22.07.23" />
+    <MESSAGE value="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23" />
   </component>
 </project>

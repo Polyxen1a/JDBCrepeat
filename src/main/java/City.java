@@ -8,52 +8,52 @@ import java.util.Objects;
 
 public class City {
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy="city")
     private List<Employee> employees = new ArrayList<>();
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "city_id")
-    private int city_id;
+    private int cityId;
 
-    @Column(name = "city_id")
-    private String city_name;
+    @Column(name = "city_name")
+    private String cityName;
     public City(String city_name) {
-        this.city_name = city_name;
+        this.cityName = cityName;
     }
 
     public City() {
     }
 
     public int getCity_id() {
-        return city_id;
+        return cityId;
     }
     public void setCity_id(int city_id) {
-        this.city_id = city_id;
+        this.cityId = city_id;
     }
     public void setCity_name(String city_name) {
-        this.city_name = city_name;
+        this.cityName = city_name;
     }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         City city = (City) o;
-        return city_id == city.city_id && city_name.equals(city.city_name);
+        return cityId == city.cityId && cityName.equals(city.cityName);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(city_id, city_name);
+        return Objects.hash(cityId, cityName);
     }
     public String getCity_name() {
-        return city_name;
+        return cityName;
     }
     @Override
     public String toString() {
         return "City{" +
-                "city_id=" + city_id +
-                ", city_name='" + city_name + '\'' +
+                "city_id=" + cityId +
+                ", city_name='" + cityName + '\'' +
                 '}';
     }
 }

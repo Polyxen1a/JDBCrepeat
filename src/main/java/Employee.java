@@ -28,9 +28,11 @@ public class Employee {
 
     @Column(name = "age")
     private int age;
+    private Object cityId;
 
-    @Column(name = "city_id")
-    private int cityId;
+    public Employee() {
+
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -117,7 +119,7 @@ public class Employee {
     }
 
     public int getCityId() {
-        return cityId;
+        return (int) cityId;
     }
 
     public void setCityId(int cityId) {
