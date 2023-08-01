@@ -29,6 +29,8 @@ public class Employee {
     @Column(name = "age")
     private int age;
 
+    private Object cityId;
+
     public Employee() {
 
     }
