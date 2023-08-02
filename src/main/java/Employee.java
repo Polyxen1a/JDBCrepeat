@@ -29,8 +29,6 @@ public class Employee {
     @Column(name = "age")
     private int age;
 
-    private Object cityId;
-
     public Employee() {
 
     }
@@ -40,7 +38,7 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return id == employee.id && age == employee.age && cityId == employee.cityId && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(gender, employee.gender);
+        return id == employee.id && age == employee.age && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(gender, employee.gender);
     }
 
     public Employee(int id, String firstName, String lastName, String gender, int age, City cityId) {
@@ -60,12 +58,12 @@ public class Employee {
                 ", last_name='" + lastName + '\'' +
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
-                ", city_id=" + cityId +
                 '}';
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, gender, age, cityId);
+        return Objects.hash(id, firstName, lastName, gender, age);
     }
 
     public Employee(String firstName, String lastName, String gender, int cityId, int age) {
@@ -117,14 +115,6 @@ public class Employee {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public int getCityId() {
-        return (int) cityId;
-    }
-
-    public void setCityId(int cityId) {
-        this.cityId = cityId;
     }
 }
 

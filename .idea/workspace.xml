@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="Hibernate: введение, Entity (повторение) 24.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 24.07.23" />
+    <list default="true" id="c122eedc-6a17-4c8a-af90-e951d1581806" name="Changes" comment="Hibernate: работа с несколькими таблицами (повторение) 01.08.23" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +74,7 @@
       <workItem from="1690193630566" duration="647000" />
       <workItem from="1690194712181" duration="405000" />
       <workItem from="1690210412949" duration="207000" />
+      <workItem from="1690893048007" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC (повторение)">
       <created>1688405790441</created>
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690210486925</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Hibernate: работа с несколькими таблицами (повторение) 01.08.23">
+      <created>1690893250666</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690893250666</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +170,7 @@
     <MESSAGE value="Hibernate: введение, Entity (повторение) 22.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 22.07.23" />
     <MESSAGE value="Hibernate: введение, Entity (повторение) 23.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 23.07.23" />
     <MESSAGE value="Hibernate: введение, Entity (повторение) 24.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 24.07.23" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate: введение, Entity (повторение) 24.07.23&#10;Hibernate: работа с несколькими таблицами (повторение) 24.07.23" />
+    <MESSAGE value="Hibernate: работа с несколькими таблицами (повторение) 01.08.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate: работа с несколькими таблицами (повторение) 01.08.23" />
   </component>
 </project>
