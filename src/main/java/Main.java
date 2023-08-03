@@ -12,8 +12,10 @@ public class Main {
 
         City newCity = new City("Москва");
 
-        Employee newEmployee = new Employee("Артем", "Матросов", "м", 37, newCity.getCity_id());
-
+        Employee newEmployee1 = new Employee("Артем", "Матросов", "м", 37, newCity.getCity_id());
+        Employee newEmployee2 = new Employee("Марина", "Федоровна", "ж", 47, 43);
+        Employee newEmployee3 = new Employee("Марина", "Губкина", "ж", 23, 23);
+        Employee newEmployee4 = new Employee("Сергей", "Давыдов", "м", 35, 47);
 
         newCity.setCity_name("Владимир");
     }

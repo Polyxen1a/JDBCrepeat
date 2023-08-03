@@ -29,7 +29,7 @@ public class Employee {
     @Column(name = "age")
     private int age;
 
-    public Employee() {
+    public Employee(String Имя, String Фамилия, String пол, int индификационный_номер, int возраст) {
 
     }
 
@@ -41,14 +41,7 @@ public class Employee {
         return id == employee.id && age == employee.age && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(gender, employee.gender);
     }
 
-    public Employee(int id, String firstName, String lastName, String gender, int age, City cityId) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
-        this.age = age;
-        this.city = cityId;
-    }
+
 
     @Override
     public String toString() {
@@ -66,7 +59,12 @@ public class Employee {
         return Objects.hash(id, firstName, lastName, gender, age);
     }
 
-    public Employee(String firstName, String lastName, String gender, int cityId, int age) {
+    public Employee(int id, String firstName, String lastName, String gender, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.age = age;
     }
 
     public City getCity() {
