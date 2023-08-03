@@ -1,0 +1,11 @@
+CREATE TABLE books (
+   book_id SERIAL PRIMARY KEY,
+   title VARCHAR(255) NOT NULL,
+   author_id INTEGER NOT NULL,
+   amount INTEGER NOT NULL
+);
+
+INSERT INTO books (book_id, title, author_id, amount) VALUES
+(1, 'Uncle Vanya', 4, 10),
+(2, 'War and Peace', 1, 5),
+(3, 'Crime and Punishment', 2, 8);
